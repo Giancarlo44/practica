@@ -3,7 +3,7 @@ ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
 $host = "34.135.137.46"; 
-$user = "gian"; 
+$user = "root"; 
 $password = "123456"; 
 $database = "practica";
 
