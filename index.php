@@ -7,7 +7,6 @@ $user = "root";
 $password = "123456"; 
 $database = "practica";
 
-$conexion = mysqli_connect($host, $user, $password, $database);
 
 if (!$conexion) {
   die("Error de conexión: " . mysqli_connect_error());
@@ -23,8 +22,7 @@ $consulta = "SELECT
   FROM Paciente p
   JOIN Proviene o ON p.id_origen = o.id_origen";
 
-$resultado = mysqli_query($conexion, $consulta);
-?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
